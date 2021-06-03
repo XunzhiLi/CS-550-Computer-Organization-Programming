@@ -1,0 +1,13 @@
+    ORG    $1000
+START:                  ; first instruction of program
+    
+        LEA     MESSAGE,A1
+        MOVE.B  #14,D0
+        TRAP    #15
+
+
+
+
+MESSAGE DC.B   'Hello World',0 
+
+        END    START        ; last line of source
